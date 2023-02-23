@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3" style="background-color: #242424;">
+        <div class="container-fluid text-center d-flex justify-content-between px-5">
+            <a class="navbar-brand" href="#">
+                <div class="logo text-start"><span class="mb-0" style="color: white;"><span
+                            style="color:#fcdd06;">Pro</span>Shop</span></div>
+            </a>
+            <div class="d-none d-lg-block">
+                <div class="input-group serbox p-2 px-5">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="button-addon2">
+                    <a class="btn btn_style" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: white;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="login">
+                                <i class="fa-solid fa-user"></i>
+                                <span for="login">Login/Sign up</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="wishlist">
+                                <i class="fa-sharp fa-solid fa-bookmark position-relative px-3">
+                                    <span class="position-absolute badge1 rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+                                <span for="wishlist">Wishlist</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cart.html" class="cart-a">
+                            <div class="icon d-flex flex-column" id="cart">
+
+                                <i class="fa-solid fa-cart-shopping position-relative">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+
+                                <span for="cart">cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span for="search">Search</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <div class="row text-md-start text-sm-start">
+            <div class="col-lg-4">
+                <div class="mb-4">
+                    <h1 style="letter-spacing: 2.4px; color: #242424; font-size: 33px; font-weight: 900;">Login.</h1>
+                    <span class="mb-3"
+                        style="letter-spacing: 1.28px; color: #707070; opacity: 0.7; font-size: 19px;">Login
+                        with your
+                        data that you entered during registration</span>
+                </div>
+                <div class="my-3">
+                    <label for="validationDefault01" class="form-label label-style"
+                        style="letter-spacing: 0.88px; color: #242424; font-size: 17px; font-weight: 600;">Enter your
+                        email
+                        address</label>
+                    <input type="email" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <div class="my-2">
+                    <label for="validationDefault01" class="form-label label-style"
+                        style="letter-spacing: 0.88px; color: #242424; font-size: 17px; font-weight: 600;">Enter your
+                        password</label>
+                    <input type="password" class="form-control" id="validationDefault01" value="" required>
+                </div>
+                <button type="submit" class="btn rounded-2 px-5 my-3" style="width: 100%; background-color: #fcdd06; font-size: 18px; font-weight: normal; letter-spacing: 0.48px;
+                        color: #242424;">Login</button>
+                <div class="form-check d-flex justify-content-center ">
+                    <input class="form-check-input" type="checkbox" id="autoSizingCheck2">
+                    <label class="form-check-label px-2" for="autoSizingCheck2" style="color: #707070;">
+                        Remember me
+                    </label>
+                </div>
+                <div class="text-center">
+                    <span style="letter-spacing: 0.88px; color: #242424; font-size: 17px;">
+                        Forgot your password?
+                    </span>
+                </div>
+                <hr class="mt-3 mb-3" style="height: 3px;">
+                <div class="text-center">
+                    <a href="./Sign Up.html">
+                        <button type="button" class="btn rounded-4 my-2 signup" style="width: 50%; background-color: white; font-size: 18px; font-weight: normal; letter-spacing: 0.48px;
+                        color: #242424; border: 3px solid #fcdd06;">Sign Up Now</button>
+                    </a>
+
+                </div>
+
+            </div>
+            <div class="col-lg-8 text-center">
+                <img class="imgsm" src="./image/Group 240.png" alt="" style="max-width: 72%;">
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

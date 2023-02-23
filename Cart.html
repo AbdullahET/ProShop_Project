@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3" style="background-color: #242424;">
+        <div class="container-fluid text-center d-flex justify-content-between px-5">
+            <a class="navbar-brand" href="#">
+                <div class="logo text-start"><span class="mb-0" style="color: white;"><span
+                            style="color:#fcdd06;">Pro</span>Shop</span></div>
+            </a>
+            <div class="d-none d-lg-block">
+                <div class="input-group serbox p-2 px-5">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="button-addon2">
+                    <a class="btn btn_style" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: white;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="login">
+                                <i class="fa-solid fa-user"></i>
+                                <span for="login">Login/Sign up</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="wishlist">
+                                <i class="fa-sharp fa-solid fa-bookmark position-relative px-3">
+                                    <span class="position-absolute badge1 rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+                                <span for="wishlist">Wishlist</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cart.html" class="cart-a">
+                            <div class="icon d-flex flex-column" id="cart">
+
+                                <i class="fa-solid fa-cart-shopping position-relative">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+
+                                <span for="cart">cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span for="search">Search</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-lg text-start mt-4">
+        <span style="font: normal normal normal 20px/12px Mulish ; letter-spacing: 0.94;
+        opacity: 1;"><a href="./home.html" style="color: #707070;">Back
+            </a>/ Shopping Cart</span>
+        <div class="row mt-4">
+            <div class="row col-lg-9 col-sm-12">
+                <div class="col-lg-12 col-md-6 col-sm-12 d-lg-flex flex-row text-sm-center rounded-2 align-items-start py-3"
+                    style="background-color: #F2F2F2;">
+                    <img src="./image/img14.PNG" alt="">
+                    <span class="phone fw-bold text-start pt-4 me-0"
+                        style="font-size: 17px !important; line-height: 20px;">Apple
+                        iPhone 11 Pro
+                        256GB Memory</span>
+
+                    <div>
+                        <div class="form-row justify-content-center ps-0" style="padding-top: 60px;">
+                            <div class="form-group">
+                                <div class="input-group mx-0">
+                                    <div class="number-input">
+                                        <button
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                        <input class="quantity" min="0" placeholder="0" name="quantity" value="1"
+                                            type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                            class="plus"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="price" style="padding-top: 70px; font-size: 22px; padding-left: 20px;">$499.99</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12 d-lg-flex flex-row text-sm-center rounded-2 align-items-start py-3 my-4"
+                    style="background-color: #F2F2F2;">
+                    <img src="./image/img15.PNG" alt="">
+                    <span class="phone fw-bold text-start pt-4 me-0"
+                        style="font-size: 17px !important; line-height: 20px;">Apple Airpods Wireless Bluetooth
+                        Headset</span>
+
+                    <div>
+                        <div class="form-row justify-content-center ps-0" style="padding-top: 60px;">
+                            <div class="form-group">
+                                <div class="input-group mx-0">
+                                    <div class="number-input">
+                                        <button
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                        <input class="quantity" min="0" placeholder="0" name="quantity" value="1"
+                                            type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                            class="plus"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-5 text-end">
+                        <span
+                            style="font-size: 12px; text-decoration: line-through; font: normal normal bold 16px Mulish; text-align: left; color: #707070; letter-spacing: 0.4px;">$99.99</span>
+                        <span class="price"
+                            style="padding-top: 70px; font-size: 22px; padding-left: 20px; padding-top: 10px !important;">$63.99</span>
+                    </div>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                <div class="col-lg-12 col-md-6 col-sm-12 d-lg-flex flex-row text-sm-center rounded-2 align-items-start py-3"
+                    style="background-color: #F2F2F2;">
+                    <img src="./image/img16.PNG" alt="">
+                    <span class="phone fw-bold text-start pt-4 me-0"
+                        style="font-size: 17px !important; line-height: 20px;">Sony PlayStation 4 Pro White
+                        Version</span>
+
+                    <div>
+                        <div class="form-row justify-content-center ps-0" style="padding-top: 60px;">
+                            <div class="form-group">
+                                <div class="input-group mx-0">
+                                    <div class="number-input">
+                                        <button
+                                            onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                        <input class="quantity" min="0" placeholder="0" name="quantity" value="1"
+                                            type="number">
+                                        <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                            class="plus"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <span class="price" style="padding-top: 70px; font-size: 22px; padding-left: 20px;">$399.99</span>
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-12 d-flex flex-column rounded-2 ms-4 px-4 pb-3"
+                style="background-color: #F2F2F2; height: 260px;">
+                <span style="padding-top: 20px;
+                    padding-bottom: 10px;
+                    text-align: left;
+                    font: normal normal bold 24px/15px Mulish;
+                    letter-spacing: 0.64px;
+                    color: #242424;
+                    opacity: 1;">Subtotal (3) items</span>
+                <span style="text-decoration: line-through;
+                    padding: 35px 0 8px;
+                    font: normal normal bold 18px/15px Mulish;
+                    letter-spacing: 0.48px;
+                    color: #707070;
+                    opacity: 1;">$999.97</span>
+                <span style="font: normal normal 900 30px/15px Mulish;
+                    padding: 10px 0 40px;
+                    letter-spacing: 0.76px;
+                    color: #242424;
+                    opacity: 1;">$963.97</span>
+                <hr>
+                <a href="./Payment.html"><button type="button" class="btn rounded-2"
+                        style="background-color: #fcdd06; font-weight: normal; padding: 6px 44px;">Proceed to
+                        checkout</button></a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

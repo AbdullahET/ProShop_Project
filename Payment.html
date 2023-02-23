@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3" style="background-color: #242424;">
+        <div class="container-fluid text-center d-flex justify-content-between px-5">
+            <a class="navbar-brand" href="#">
+                <div class="logo text-start"><span class="mb-0" style="color: white;"><span
+                            style="color:#fcdd06;">Pro</span>Shop</span></div>
+            </a>
+            <div class="d-none d-lg-block">
+                <div class="input-group serbox p-2 px-5">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="button-addon2">
+                    <a class="btn btn_style" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: white;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="login">
+                                <i class="fa-solid fa-user"></i>
+                                <span for="login">Login/Sign up</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="wishlist">
+                                <i class="fa-sharp fa-solid fa-bookmark position-relative px-3">
+                                    <span class="position-absolute badge1 rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+                                <span for="wishlist">Wishlist</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cart.html" class="cart-a">
+                            <div class="icon d-flex flex-column" id="cart">
+
+                                <i class="fa-solid fa-cart-shopping position-relative">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+
+                                <span for="cart">cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span for="search">Search</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h4 class="pt-5 mb-4" style="text-align: left;
+        font: normal normal 900 28px/15px Mulish;
+        letter-spacing: 1.28px;
+        color: #242424;
+        opacity: 1;">Review Order</h4>
+        <div class="Payment-titl d-flex flex-row align-items-center position-relative">
+            <div class="numb">
+                1
+            </div>
+            <span class="ps-2">Shipping and Payment</span>
+            <div class="numb2">
+                2
+            </div>
+            <span class="place ps-2">Place an Order</span>
+        </div>
+        <div class="row mt-4">
+            <div class="col-lg-7 col-sm-12 sm-text rounded-2 margin-sm" style="background-color: #F2F2F2;">
+                <div class="container">
+                    <h5 class="pt-4">Shipping Address</h5>
+                    <div class="row g-2">
+                        <div class="col-lg-5">
+                            <label for="validationDefault01" class="form-label label-style">Country</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-lg-5">
+                            <label for="validationDefault01" class="form-label label-style">City</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="validationDefault01" class="form-label label-style">Zip Code</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-2"></div>
+                        <div class="col-md-5">
+                            <label for="validationDefault01" class="form-label label-style">Street Address</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                    </div>
+                    <h5 class="pt-4">Payment Details</h5>
+                    <div class="row g-2 pb-4 justify-content-between">
+                        <div class="col-lg-5">
+                            <label for="validationDefault01" class="form-label label-style">Name on Card</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-lg-5 position-relative">
+                            <label for="validationDefault01" class="form-label label-style">Card Number</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                            <img class="visa" src="./image/visa.PNG" alt="">
+                        </div>
+                        <div class="col-md-5">
+                            <label for="validationDefault01" class="form-label label-style">Expiration Date</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                        <div class="col-md-5">
+                            <label for="validationDefault01" class="form-label label-style">CVC</label>
+                            <input type="text" class="form-control" id="validationDefault01" value="" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12 rounded-2 ms-lg-4 mt-sm-5 mt-lg-0 pb-2" style="background-color: #F2F2F2;">
+                <div class="d-flex flex-row justify-content-between pt-4">
+                    <h5 class="ps-2">Order Details</h5>
+                    <a class="pe-2" href="" style="letter-spacing: 0.44px;
+                    color: #707070;
+                    opacity: 1;
+                    text-decoration: underline;">Change</a>
+                </div>
+                <div class="d-flex flex-row pt-2">
+                    <img src="./image/img14.PNG" alt="" style="width: 125px; height: 85px;">
+                    <div class="d-flex flex-column pt-1">
+                        <span style="letter-spacing: 0.34px; font-size: 16px;
+                        color: #707070;">iPhone 11 Pro 256GB Memory</span>
+                        <div class="d-flex flex-row justify-content-between pt-3">
+                            <div>
+                                <span style="letter-spacing: 0.44px;
+                                color: #707070;">$499.99</span>
+                                <span style="letter-spacing: 0.32px; font-size: 13px;
+                                color: #707070;">×1</span>
+                            </div>
+                            <div>
+                                <span style="letter-spacing: 0.44px; font-weight: 600;
+                                color: #242424;">$499.99</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex flex-row pt-2">
+                    <img src="./image/img15.PNG" alt="" style="width: 125px; height: 85px;">
+                    <div class="d-flex flex-column pt-1 ps-2">
+                        <span style="letter-spacing: 0.34px; font-size: 16px;
+                        color: #707070;">Apple Airpods Wireless Bluetooth Headset</span>
+                        <div class="d-flex flex-row justify-content-between pt-3">
+                            <div>
+                                <span style="letter-spacing: 0.44px;
+                                color: #707070;">$89.99</span>
+                                <span style="letter-spacing: 0.32px; font-size: 13px;
+                                color: #707070;">×1</span>
+                            </div>
+                            <div>
+                                <span style="letter-spacing: 0.44px; font-weight: 600;
+                                color: #242424;">$89.99</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="d-flex justify-content-between px-3 paddb">
+                    <div class="d-flex flex-column py-1" style="letter-spacing: 0.32px;
+                    color: #707070;">
+                        <span>Subtotal</span>
+                        <span>Tax</span>
+                        <span>Shipping</span>
+                        <span style="color: #242424; font-weight: bold;">Total</span>
+                    </div>
+                    <div class="d-flex flex-column py-1" style="letter-spacing: 0.32px;
+                    color: #707070;">
+                        <span>$589.98</span>
+                        <span>$2.53</span>
+                        <span>$0.00</span>
+                        <span style="color: #242424; font-weight: bold;">$592.51</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="text-lg-end text-sm-center me-lg-5 py-4">
+            <a href="./‏‏Payment2.html"> <button type="button" class="me-lg-2 btn rounded-2 px-5" style="background-color: #fcdd06; font-size: 18px; font-weight: normal; letter-spacing: 0.48px;
+            color: #242424;">Review
+                    Order</button></a>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

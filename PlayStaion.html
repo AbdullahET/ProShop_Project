@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayStation</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-3" style="background-color: #242424;">
+        <div class="container-fluid text-center d-flex justify-content-between px-5">
+            <a class="navbar-brand" href="#">
+                <div class="logo text-start"><span class="mb-0" style="color: white;"><span
+                            style="color:#fcdd06;">Pro</span>Shop</span></div>
+            </a>
+            <div class="d-none d-lg-block">
+                <div class="input-group serbox p-2 px-5">
+                    <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                        aria-describedby="button-addon2">
+                    <a class="btn btn_style" type="button" id="button-addon2">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                        Search
+                    </a>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent" style="color: white;">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="login">
+                                <i class="fa-solid fa-user"></i>
+                                <span for="login">Login/Sign up</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="wishlist">
+                                <i class="fa-sharp fa-solid fa-bookmark position-relative px-3">
+                                    <span class="position-absolute badge1 rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+                                <span for="wishlist">Wishlist</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="./cart.html" class="cart-a">
+                            <div class="icon d-flex flex-column" id="cart">
+
+                                <i class="fa-solid fa-cart-shopping position-relative">
+                                    <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill">
+                                        0
+                                    </span>
+                                </i>
+
+                                <span for="cart">cart</span>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="nav-item d-block d-lg-none">
+                        <a href="#" class="cart-a">
+                            <div class="icon d-flex flex-column" id="search">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                                <span for="search">Search</span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-start mt-4">
+        <span style="font: normal normal normal 20px/12px Mulish ; letter-spacing: 0.94;
+        opacity: 1;"><a href="./home.html" style="color: #707070;">Back
+            </a> / Sony PlayStation 4 Pro White Version</span>
+        <div class="row justify-content-between">
+            <div class="col-lg-3 text-center pt-5">
+                <img src="./image/img6.PNG" alt="">
+                <div class="d-flex justify-content-center ps-md-5 ms-md-3 pt-md-5">
+                    <!-- <img src="./image/img17.PNG" alt="">
+                    <img src="./image/img18.PNG" alt="">
+                    <img src="./image/img19.PNG" alt=""> -->
+                </div>
+            </div>
+            <div class="col-lg-8 pt-4 position-relative">
+                <div class="d-flex justify-content-between">
+                    <h5>
+                        Sony PlayStation 4 Pro White Version
+                    </h5>
+                    <h5>$399.99</h5>
+                </div>
+                <div class="form-row justify-content-center pt-3 text-start pe-3 position-absolute left">
+                    <div class="form-group">
+                        <div class="input-group mx-0">
+                            <div class="number-input">
+                                <button
+                                    onclick="this.parentNode.querySelector('input[type=number]').stepDown()"></button>
+                                <input class="quantity" min="0" placeholder="0" name="quantity" value="1" type="number">
+                                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()"
+                                    class="plus"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-5 mt-4">
+                    <span style="color: #707070; font-weight: 600;">Color : <span
+                            style="color: #242424; font-weight: 700;">White</span></span>
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <div class="ms-1">
+                        <input type='radio' class="white sss" name="gender" checked />
+                    </div>
+                    <div class="mt-md-2 mt-sm-5">
+                        <a href="" class="btn add" style="background-color: white; border: 2px solid #fcdd06;"><i
+                                class="fa-regular fa-bookmark"></i></a>
+                        <a href="" class="btn add"
+                            style="background-color: #fcdd06; padding-left: 63px; font-weight: 600; padding-right: 63px; margin-left: 7px;">Add
+                            To
+                            Cart</a>
+                    </div>
+                </div>
+                <div class="mt-5 pt-5">
+                    <span style="letter-spacing: 0.32px; color: #242424; font-size: 13px;">Et placeat odio voluptas
+                        saepe ullam enim sed. Sint rem sint. Ex enim aperiam consequatur. Est
+                        temporibus ab. Pariatur aut ut temporibus culpa. Aut adipisci veniam esse. Quidem dolor corporis
+                        consequuntur non sunt et neque. Aut dolorem repellat quo architecto sint minima doloremque. At
+                        quae laborum incidunt vel voluptas dolor similique aut. Aut sunt saepe tempore eos sint ut amet
+                        voluptatibus dicta. Nihil nemo animi. Est laboriosam tempore. Porro id voluptates a nesciunt
+                        natus qui. Qui mollitia iusto. Perspiciatis reiciendis laborum consequuntur sint porro omnis et
+                        facere. Voluptatem vitae quo. Similique atque cumque culpa temporibus consequatur voluptatibus
+                        id. Cupiditate alias quas non ab veritatis et. Sed et qui consequatur aut. Eum consequuntur
+                        necessitatibus veritatis voluptatem qui velit repellat numquam tempore. Qui quam eos modi.
+                        Libero corporis ut et. Eligendi est expedita aspernatur non repellendus nihil perferendis. Et
+                        deserunt doloremque esse. Iusto veniam odio consequatur sint illum. Quis dolor doloribus. Nemo
+                        ut sit adipisci dolores iure. Est qui rerum ullam mollitia molestiae magnam porro at fugit.
+                        Neque ut debitis ut porro rerum. Occaecati temporibus voluptatem quo eaque. Voluptas impedit
+                        veritatis dolore assumenda. Aut doloribus unde repellat pariatur consequatur. Blanditiis
+                        voluptas aut tempora facilis fugi.</span>
+                </div>
+            </div>
+        </div>
+        <h5 class="mb-4 mt-5">Specification</h5>
+        <div style="border: 1px solid #BCBCBC;">
+            <div class="container px-4">
+                <h5 class="py-3" style="font-size: 15px;">Technical Details</h5>
+                <div class="row justify-content-between px-3 my-2">
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: #f2f2f2;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                    <div class="col-md-5 col-sm-12 py-2 text-start rounded-3 d-flex justify-content-around"
+                        style="background-color: white;">
+                        <span>Brand :</span>
+                        <span>Apple</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h5 class="py-4">Reviews</h5>
+        <div style="border: 1px solid #BCBCBC;">
+            <div class="container px-4 py-3">
+                <div>
+                    <h5 class="ps-2" style="font-size: 15px;">Jenifer Medhurst</h5>
+                    <div class="d-flex justify-content-between pt-2">
+                        <div class="star-rating d-flex justify-content-center flex-row">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                        </div>
+                        <div>
+                            <span style="letter-spacing: 0.64px; color: #707070; font-size: 12px;">28th March
+                                2022</span>
+                        </div>
+                    </div>
+                    <div class="container my-3 rounded-2 px-4 py-3"
+                        style="letter-spacing: 0.64px; color: #242424; font-size: 13px; background-color: #f2f2f2;">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam volup. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita.
+                    </div>
+                </div>
+                <div>
+                    <h5 class="ps-2" style="font-size: 15px;">Dr. Ward Farrell</h5>
+                    <div class="d-flex justify-content-between pt-2">
+                        <div class="star-rating d-flex justify-content-center flex-row">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span style="letter-spacing: 0.64px; color: #707070; font-size: 12px;">28th March
+                                2022</span>
+                        </div>
+                    </div>
+                    <div class="container my-3 rounded-2 px-4 py-3"
+                        style="letter-spacing: 0.64px; color: #242424; font-size: 13px; background-color: #f2f2f2;">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam volup. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita.
+                    </div>
+                </div>
+                <div>
+                    <h5 class="ps-2" style="font-size: 15px;">Edythe Heaney</h5>
+                    <div class="d-flex justify-content-between pt-2">
+                        <div class="star-rating d-flex justify-content-center flex-row">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <div>
+                            <span style="letter-spacing: 0.64px; color: #707070; font-size: 12px;">28th March
+                                2022</span>
+                        </div>
+                    </div>
+                    <div class="container my-3 rounded-2 px-4 py-3"
+                        style="letter-spacing: 0.64px; color: #242424; font-size: 13px; background-color: #f2f2f2;">
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam volup. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
+                        ut
+                        labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
+                        dolores
+                        et ea rebum. Stet clita.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluide" style="background-color: #F7F8FC;">
+        <div class="container text-center">
+            <div class="categg mt-5 mb-1 position-relative">
+                <h4 class="text-uppercase pt-5">Featured Products</h4>
+                <hr>
+            </div>
+            <div class="row text-center pt-2 slider2">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="container text-center" style="width: 350px !important; background-color: white;">
+                        <img src="./image/img8.PNG" alt="" style="padding-top: 26px;">
+                        <br>
+                        <span class="phone">Apple iPhone 11 Pro 256GB Memory</span>
+                        <div class="star-rating d-flex justify-content-center flex-row py-3">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price">$499.99</span>
+                        <div class="add-cart mt-3 pb-4">
+                            <a href="" class="btn add" style="background-color: #F2F2F2;"><i
+                                    class="fa-regular fa-bookmark"></i></a>
+                            <a href="" class="btn add"
+                                style="background-color: #F2F2F2; padding-left: 63px; padding-right: 63px; margin-left: 7px;">Add
+                                To
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="container text-center position-relative"
+                        style="width: 350px !important; background-color: white;">
+                        <div class="discount">
+                            <span>-30%</span>
+                        </div>
+                        <img src="./image/img7.PNG" alt="" style="padding-top: 94px;">
+                        <br>
+                        <span class="phone">Apple Airpods Wireless Bluetooth</span>
+                        <div class="star-rating d-flex justify-content-center flex-row py-3">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price"><span
+                                style="color: #FC4059; padding-right: 15px;">$63.99</span><del>$99.99</del></span>
+                        <div class="add-cart mt-3 pb-4">
+                            <a href="" class="btn add" style="background-color: #F2F2F2;"><i
+                                    class="fa-regular fa-bookmark"></i></a>
+                            <a href="" class="btn add"
+                                style="background-color: #F2F2F2; padding-left: 63px; padding-right: 63px; margin-left: 7px;">Add
+                                To
+                                Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="container text-center" style="width: 350px !important; background-color: white;">
+                        <img src="./image/img6.PNG" alt="" class="pt-2">
+                        <br>
+                        <span class="phone">Sony Playstation 4 Pro White Version</span>
+                        <div class="star-rating d-flex justify-content-center flex-row py-3">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price">$399.99</span>
+                        <div class="add-cart mt-3 pb-4">
+                            <a href="" class="btn add" style="background-color: #F2F2F2;"><i
+                                    class="fa-regular fa-bookmark"></i></a>
+                            <a href="" class="btn add"
+                                style="background-color: #F2F2F2; padding-left: 63px; padding-right: 63px; margin-left: 7px;">Add
+                                To
+                                Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="container text-center" style="width: 350px !important; background-color: white;">
+                        <img src="./image/img8.PNG" alt="" style="padding-top: 26px;">
+                        <br>
+                        <span class="phone">Apple iPhone 11 Pro 256GB Memory</span>
+                        <div class="star-rating d-flex justify-content-center flex-row py-3">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price">$499.99</span>
+                        <div class="add-cart mt-3 pb-4">
+                            <a href="" class="btn add" style="background-color: #F2F2F2;"><i
+                                    class="fa-regular fa-bookmark"></i></a>
+                            <a href="" class="btn add"
+                                style="background-color: #F2F2F2; padding-left: 63px; padding-right: 63px; margin-left: 7px;">Add
+                                To
+                                Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="container text-center position-relative"
+                        style="width: 350px !important; background-color: white;">
+                        <div class="discount">
+                            <span>-30%</span>
+                        </div>
+                        <img src="./image/img7.PNG" alt="" style="padding-top: 94px;">
+                        <br>
+                        <span class="phone">Apple Airpods Wireless Bluetooth</span>
+                        <div class="star-rating d-flex justify-content-center flex-row py-3">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price"><span
+                                style="color: #FC4059; padding-right: 15px;">$63.99</span><del>$99.99</del></span>
+                        <div class="add-cart mt-3 pb-4">
+                            <a href="" class="btn add" style="background-color: #F2F2F2;"><i
+                                    class="fa-regular fa-bookmark"></i></a>
+                            <a href="" class="btn add"
+                                style="background-color: #F2F2F2; padding-left: 63px; padding-right: 63px; margin-left: 7px;">Add
+                                To
+                                Cart</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="container text-center" style="width: 350px !important; background-color: white;">
+                        <img src="./image/img6.PNG" alt="" class="pt-2">
+                        <br>
+                        <span class="phone">Sony Playstation 4 Pro White Version</span>
+                        <div class="star-rating d-flex justify-content-center flex-row py-3">
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-sharp fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price">$399.99</span>
+                        <div class="add-cart mt-3 pb-4">
+                            <a href="" class="btn add" style="background-color: #F2F2F2;"><i
+                                    class="fa-regular fa-bookmark"></i></a>
+                            <a href="" class="btn add"
+                                style="background-color: #F2F2F2; padding-left: 63px; padding-right: 63px; margin-left: 7px;">Add
+                                To
+                                Cart</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.js"
+        integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    <script src="./js/slick.min.js"></script>
+    <script>
+        $('.slider2').slick({
+            dots: true,
+            infinite: false,
+            prevArrow: false,
+            nextArrow: false,
+            speed: 300,
+            slidesToShow: 3,
+            slidesToScroll: 2,
+            responsive: [
+                {
+                    breakpoint: 1024,
+                    settings: {
+                        slidesToShow: 3,
+                        slidesToScroll: 2,
+                        infinite: true,
+                        dots: true
+                    }
+                },
+                {
+                    breakpoint: 600,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
+            ]
+        });
+    </script>
+</body>
+
+</html>
